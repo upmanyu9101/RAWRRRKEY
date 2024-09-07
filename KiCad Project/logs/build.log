@@ -1,0 +1,833 @@
+[2024-09-07 09:29:17,069 key_placer.py:310]: Set key 1U distance: 19050000/19050000
+[2024-09-07 09:29:17,135 key_placer.py:117]: Switches by nets: defaultdict(<class 'list'>, {frozenset({'COL5', 'ROW2'}): ['SW33'], frozenset({'COL18', 'ROW4'}): ['SW68'], frozenset({'ROW2', 'COL11'}): ['SW39'], frozenset({'COL3', 'ROW4'}): ['SW59'], frozenset({'COL16', 'ROW4'}): ['SW66'], frozenset({'COL14', 'ROW2'}): ['SW42'], frozenset({'COL8', 'ROW2'}): ['SW36'], frozenset({'COL3', 'ROW2'}): ['SW31'], frozenset({'ROW1', 'COL6'}): ['SW19'], frozenset({'COL12', 'ROW2'}): ['SW40'], frozenset({'ROW3', 'COL11'}): ['SW52'], frozenset({'ROW4', 'COL9'}): ['SW62'], frozenset({'ROW0', 'COL11'}): ['SW9'], frozenset({'COL9', 'ROW2'}): ['SW37'], frozenset({'COL18', 'ROW1'}): ['SW30'], frozenset({'ROW4', 'COL17'}): ['SW67'], frozenset({'COL4', 'ROW4'}): ['SW60'], frozenset({'COL8', 'ROW1'}): ['SW21'], frozenset({'COL9', 'ROW3'}): ['SW50'], frozenset({'COL12', 'ROW1'}): ['SW25'], frozenset({'COL18', 'ROW3'}): ['SW58'], frozenset({'COL5', 'ROW0'}): ['SW3'], frozenset({'ROW2', 'COL13'}): ['SW41'], frozenset({'COL17', 'ROW3'}): ['SW57'], frozenset({'COL3', 'ROW3'}): ['SW45'], frozenset({'COL5', 'ROW3'}): ['SW46'], frozenset({'ROW1', 'COL7'}): ['SW20'], frozenset({'ROW3', 'COL13'}): ['SW54'], frozenset({'COL4', 'ROW0'}): ['SW2'], frozenset({'ROW2', 'COL7'}): ['SW35'], frozenset({'ROW1', 'COL10'}): ['SW23'], frozenset({'ROW4', 'COL14'}): ['SW64'], frozenset({'ROW3', 'COL15'}): ['SW56'], frozenset({'COL9', 'ROW1'}): ['SW22'], frozenset({'ROW0', 'COL7'}): ['SW5'], frozenset({'COL8', 'ROW3'}): ['SW49'], frozenset({'COL5', 'ROW4'}): ['SW61'], frozenset({'ROW4', 'COL13'}): ['SW63'], frozenset({'COL9', 'ROW0'}): ['SW7'], frozenset({'ROW1', 'COL15'}): ['SW28'], frozenset({'COL12', 'ROW3'}): ['SW53'], frozenset({'ROW0', 'COL6'}): ['SW4'], frozenset({'COL12', 'ROW0'}): ['SW10'], frozenset({'COL16', 'ROW0'}): ['SW14'], frozenset({'COL14', 'ROW1'}): ['SW27'], frozenset({'ROW4', 'COL15'}): ['SW65'], frozenset({'ROW0', 'COL13'}): ['SW11'], frozenset({'ROW3', 'COL6'}): ['SW47'], frozenset({'COL4', 'ROW2'}): ['SW32'], frozenset({'COL18', 'ROW0'}): ['SW15'], frozenset({'ROW3', 'COL7'}): ['SW48'], frozenset({'ROW3', 'COL10'}): ['SW51'], frozenset({'ROW0', 'COL15'}): ['SW13'], frozenset({'COL18', 'ROW2'}): ['SW44'], frozenset({'COL16', 'ROW2'}): ['SW43'], frozenset({'COL3', 'ROW1'}): ['SW16'], frozenset({'ROW2', 'COL10'}): ['SW38'], frozenset({'COL8', 'ROW0'}): ['SW6'], frozenset({'COL16', 'ROW1'}): ['SW29'], frozenset({'COL5', 'ROW1'}): ['SW18'], frozenset({'COL14', 'ROW0'}): ['SW12'], frozenset({'ROW0', 'COL10'}): ['SW8'], frozenset({'ROW2', 'COL6'}): ['SW34'], frozenset({'COL4', 'ROW1'}): ['SW17'], frozenset({'COL13', 'ROW1'}): ['SW26'], frozenset({'COL3', 'ROW0'}): ['SW1'], frozenset({'COL14', 'ROW3'}): ['SW55'], frozenset({'ROW1', 'COL11'}): ['SW24']})
+[2024-09-07 09:29:17,135 key_placer.py:121]: Diodes by switch: {'SW20': ['D20'], 'SW34': ['D34'], 'SW21': ['D21'], 'SW25': ['D25'], 'SW65': ['D65'], 'SW46': ['D46'], 'SW56': ['D56'], 'SW14': ['D14'], 'SW10': ['D10'], 'SW33': ['D33'], 'SW36': ['D36'], 'SW12': ['D12'], 'SW31': ['D31'], 'SW1': ['D1'], 'SW3': ['D3'], 'SW16': ['D16'], 'SW6': ['D6'], 'SW55': ['D55'], 'SW57': ['D57'], 'SW67': ['D67'], 'SW13': ['D13'], 'SW58': ['D58'], 'SW28': ['D28'], 'SW45': ['D45'], 'SW68': ['D68'], 'SW18': ['D18'], 'SW52': ['D52'], 'SW19': ['D19'], 'SW64': ['D64'], 'SW54': ['D54'], 'SW63': ['D63'], 'SW40': ['D40'], 'SW26': ['D26'], 'SW42': ['D42'], 'SW4': ['D4'], 'SW17': ['D17'], 'SW9': ['D9'], 'SW15': ['D15'], 'SW37': ['D37'], 'SW32': ['D32'], 'SW5': ['D5'], 'SW2': ['D2'], 'SW24': ['D24'], 'SW48': ['D48'], 'SW49': ['D49'], 'SW41': ['D41'], 'SW38': ['D38'], 'SW43': ['D43'], 'SW29': ['D29'], 'SW66': ['D66'], 'SW8': ['D8'], 'SW50': ['D50'], 'SW61': ['D61'], 'SW39': ['D39'], 'SW11': ['D11'], 'SW35': ['D35'], 'SW7': ['D7'], 'SW62': ['D62'], 'SW44': ['D44'], 'SW59': ['D59'], 'SW60': ['D60'], 'SW53': ['D53'], 'SW22': ['D22'], 'SW27': ['D27'], 'SW23': ['D23'], 'SW51': ['D51'], 'SW47': ['D47'], 'SW30': ['D30']}
+[2024-09-07 09:29:17,136 kle_serial.py:885]: User layout: {'meta': {'author': 'Gondolindrim and Chewwy', 'backcolor': '#eeeeee', 'background': {'name': '', 'style': ''}, 'name': 'Anticheww', 'notes': '', 'radii': '', 'switchBrand': '', 'switchMount': 'cherry', 'switchType': ''}, 'keys': [{'color': '#cccccc', 'labels': ['0,3'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 2.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,4'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 3.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,5'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 4.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,6'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 5.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,7'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 6.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,8'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 7.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,9'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 8.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,10'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 9.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,11'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 10.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,12'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 11.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,13'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 12.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,14'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 13.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,15'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 14.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#92de8a', 'labels': ['0,16'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 15.5, 'y': 0, 'width': 2, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 2, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['0,18'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 17.5, 'y': 0, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,3'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 2.5, 'y': 1, 'width': 1.5, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.5, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,4'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 4, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,5'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 5, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,6'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 6, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,7'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 7, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,8'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 8, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,9'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 9, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,10'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 10, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,11'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 11, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,12'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 12, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,13'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 13, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,14'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 14, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,15'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 15, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#f27e7e', 'labels': ['1,16'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 16, 'y': 1, 'width': 1.5, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.5, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['1,18'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 17.5, 'y': 1, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#99dee0', 'labels': ['2,3'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 2.5, 'y': 2, 'width': 1.75, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.75, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,4'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 4.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,5'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 5.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,6'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 6.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,7'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 7.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': True, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,8'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 8.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,9'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 9.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,10'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 10.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': True, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,11'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 11.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,12'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 12.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,13'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 13.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,14'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 14.25, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#f27e7e', 'labels': ['2,16'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 15.25, 'y': 2, 'width': 2.25, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 2.25, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['2,18'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 17.5, 'y': 2, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#f2b67e', 'labels': ['3,3'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 2.5, 'y': 3, 'width': 2.25, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 2.25, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,5'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 4.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,6'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 5.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,7'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 6.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,8'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 7.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,9'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 8.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,10'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 9.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,11'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 10.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,12'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 11.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,13'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 12.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,14'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 13.75, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#8486c2', 'labels': ['3,15'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 14.75, 'y': 3, 'width': 1.75, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.75, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#8486c2', 'labels': ['3,17'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 16.5, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['3,18'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 17.5, 'y': 3, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,3'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 2.5, 'y': 4, 'width': 1.25, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.25, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,4'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 3.75, 'y': 4, 'width': 1.25, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.25, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,5'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 5, 'y': 4, 'width': 1.25, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1.25, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#d5db70', 'labels': ['4,9'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 6.25, 'y': 4, 'width': 6.25, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 6.25, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,13'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 12.5, 'y': 4, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,14'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 13.5, 'y': 4, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,15'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 14.5, 'y': 4, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,16'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 15.5, 'y': 4, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,17'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 16.5, 'y': 4, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}, {'color': '#cccccc', 'labels': ['4,18'], 'textColor': [], 'textSize': [], 'default': {'textColor': '#000000', 'textSize': 3}, 'x': 17.5, 'y': 4, 'width': 1, 'height': 1, 'x2': 0, 'y2': 0, 'width2': 1, 'height2': 1, 'rotation_x': 0, 'rotation_y': 0, 'rotation_angle': 0, 'decal': False, 'ghost': False, 'stepped': False, 'nub': False, 'profile': '', 'sm': '', 'sb': '', 'st': ''}]}
+[2024-09-07 09:29:17,137 key_placer.py:945]: Detected layout convertible to matrix annotated keyboard
+[2024-09-07 09:29:17,137 key_placer.py:261]: Got ['SW1'] for ('0', '3') position
+[2024-09-07 09:29:17,138 key_placer.py:610]: Layout offset: (38100000, 28575000)
+[2024-09-07 09:29:17,138 key_placer.py:261]: Got ['SW1'] for ('0', '3') position
+[2024-09-07 09:29:17,139 board_modifier.py:84]: Setting SW1 footprint position: (95250000, 38100000)
+[2024-09-07 09:29:17,139 key_placer.py:261]: Got ['SW2'] for ('0', '4') position
+[2024-09-07 09:29:17,139 board_modifier.py:84]: Setting SW2 footprint position: (114300000, 38100000)
+[2024-09-07 09:29:17,139 key_placer.py:261]: Got ['SW3'] for ('0', '5') position
+[2024-09-07 09:29:17,139 board_modifier.py:84]: Setting SW3 footprint position: (133350000, 38100000)
+[2024-09-07 09:29:17,139 key_placer.py:261]: Got ['SW4'] for ('0', '6') position
+[2024-09-07 09:29:17,139 board_modifier.py:84]: Setting SW4 footprint position: (152400000, 38100000)
+[2024-09-07 09:29:17,139 key_placer.py:261]: Got ['SW5'] for ('0', '7') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW5 footprint position: (171450000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW6'] for ('0', '8') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW6 footprint position: (190500000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW7'] for ('0', '9') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW7 footprint position: (209550000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW8'] for ('0', '10') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW8 footprint position: (228600000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW9'] for ('0', '11') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW9 footprint position: (247650000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW10'] for ('0', '12') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW10 footprint position: (266700000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW11'] for ('0', '13') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW11 footprint position: (285750000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW12'] for ('0', '14') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW12 footprint position: (304800000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW13'] for ('0', '15') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW13 footprint position: (323850000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW14'] for ('0', '16') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW14 footprint position: (352425000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW15'] for ('0', '18') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW15 footprint position: (381000000, 38100000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW16'] for ('1', '3') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW16 footprint position: (100012500, 57150000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW17'] for ('1', '4') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW17 footprint position: (123825000, 57150000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW18'] for ('1', '5') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW18 footprint position: (142875000, 57150000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW19'] for ('1', '6') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW19 footprint position: (161925000, 57150000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW20'] for ('1', '7') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW20 footprint position: (180975000, 57150000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW21'] for ('1', '8') position
+[2024-09-07 09:29:17,140 board_modifier.py:84]: Setting SW21 footprint position: (200025000, 57150000)
+[2024-09-07 09:29:17,140 key_placer.py:261]: Got ['SW22'] for ('1', '9') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW22 footprint position: (219075000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW23'] for ('1', '10') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW23 footprint position: (238125000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW24'] for ('1', '11') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW24 footprint position: (257175000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW25'] for ('1', '12') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW25 footprint position: (276225000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW26'] for ('1', '13') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW26 footprint position: (295275000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW27'] for ('1', '14') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW27 footprint position: (314325000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW28'] for ('1', '15') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW28 footprint position: (333375000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW29'] for ('1', '16') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW29 footprint position: (357187500, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW30'] for ('1', '18') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW30 footprint position: (381000000, 57150000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW31'] for ('2', '3') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW31 footprint position: (102393750, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW32'] for ('2', '4') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW32 footprint position: (128587500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW33'] for ('2', '5') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW33 footprint position: (147637500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW34'] for ('2', '6') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW34 footprint position: (166687500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW35'] for ('2', '7') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW35 footprint position: (185737500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW36'] for ('2', '8') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW36 footprint position: (204787500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW37'] for ('2', '9') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW37 footprint position: (223837500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW38'] for ('2', '10') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW38 footprint position: (242887500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW39'] for ('2', '11') position
+[2024-09-07 09:29:17,141 board_modifier.py:84]: Setting SW39 footprint position: (261937500, 76200000)
+[2024-09-07 09:29:17,141 key_placer.py:261]: Got ['SW40'] for ('2', '12') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW40 footprint position: (280987500, 76200000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW41'] for ('2', '13') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW41 footprint position: (300037500, 76200000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW42'] for ('2', '14') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW42 footprint position: (319087500, 76200000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW43'] for ('2', '16') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW43 footprint position: (350043750, 76200000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW44'] for ('2', '18') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW44 footprint position: (381000000, 76200000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW45'] for ('3', '3') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW45 footprint position: (107156250, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW46'] for ('3', '5') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW46 footprint position: (138112500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW47'] for ('3', '6') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW47 footprint position: (157162500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW48'] for ('3', '7') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW48 footprint position: (176212500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW49'] for ('3', '8') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW49 footprint position: (195262500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW50'] for ('3', '9') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW50 footprint position: (214312500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW51'] for ('3', '10') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW51 footprint position: (233362500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW52'] for ('3', '11') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW52 footprint position: (252412500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW53'] for ('3', '12') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW53 footprint position: (271462500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW54'] for ('3', '13') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW54 footprint position: (290512500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW55'] for ('3', '14') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW55 footprint position: (309562500, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW56'] for ('3', '15') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW56 footprint position: (335756250, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW57'] for ('3', '17') position
+[2024-09-07 09:29:17,142 board_modifier.py:84]: Setting SW57 footprint position: (361950000, 95250000)
+[2024-09-07 09:29:17,142 key_placer.py:261]: Got ['SW58'] for ('3', '18') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW58 footprint position: (381000000, 95250000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW59'] for ('4', '3') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW59 footprint position: (97631250, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW60'] for ('4', '4') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW60 footprint position: (121443750, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW61'] for ('4', '5') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW61 footprint position: (145256250, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW62'] for ('4', '9') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW62 footprint position: (216693750, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW63'] for ('4', '13') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW63 footprint position: (285750000, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW64'] for ('4', '14') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW64 footprint position: (304800000, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW65'] for ('4', '15') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW65 footprint position: (323850000, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW66'] for ('4', '16') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW66 footprint position: (342900000, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW67'] for ('4', '17') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW67 footprint position: (361950000, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:261]: Got ['SW68'] for ('4', '18') position
+[2024-09-07 09:29:17,143 board_modifier.py:84]: Setting SW68 footprint position: (381000000, 114300000)
+[2024-09-07 09:29:17,143 key_placer.py:955]: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.CUSTOM: 'Custom'>, position=ElementPosition(x=5.08, y=4, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW1 footprint position: (95250000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D1 footprint position: (100330000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW2 footprint position: (114300000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D2 footprint position: (119380000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW3 footprint position: (133350000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D3 footprint position: (138430000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW4 footprint position: (152400000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D4 footprint position: (157480000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW5 footprint position: (171450000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D5 footprint position: (176530000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW6 footprint position: (190500000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D6 footprint position: (195580000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW7 footprint position: (209550000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D7 footprint position: (214630000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW8 footprint position: (228600000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D8 footprint position: (233680000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW9 footprint position: (247650000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D9 footprint position: (252730000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW10 footprint position: (266700000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D10 footprint position: (271780000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW11 footprint position: (285750000, 38100000)
+[2024-09-07 09:29:17,144 board_modifier.py:84]: Setting D11 footprint position: (290830000, 42100000)
+[2024-09-07 09:29:17,144 board_modifier.py:97]: Getting SW12 footprint position: (304800000, 38100000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D12 footprint position: (309880000, 42100000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW13 footprint position: (323850000, 38100000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D13 footprint position: (328930000, 42100000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW14 footprint position: (352425000, 38100000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D14 footprint position: (357505000, 42100000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW15 footprint position: (381000000, 38100000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D15 footprint position: (386080000, 42100000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW16 footprint position: (100012500, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D16 footprint position: (105092500, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW17 footprint position: (123825000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D17 footprint position: (128905000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW18 footprint position: (142875000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D18 footprint position: (147955000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW19 footprint position: (161925000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D19 footprint position: (167005000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW20 footprint position: (180975000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D20 footprint position: (186055000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW21 footprint position: (200025000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D21 footprint position: (205105000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW22 footprint position: (219075000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D22 footprint position: (224155000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW23 footprint position: (238125000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D23 footprint position: (243205000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW24 footprint position: (257175000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D24 footprint position: (262255000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW25 footprint position: (276225000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D25 footprint position: (281305000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW26 footprint position: (295275000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D26 footprint position: (300355000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW27 footprint position: (314325000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D27 footprint position: (319405000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW28 footprint position: (333375000, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D28 footprint position: (338455000, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW29 footprint position: (357187500, 57150000)
+[2024-09-07 09:29:17,145 board_modifier.py:84]: Setting D29 footprint position: (362267500, 61150000)
+[2024-09-07 09:29:17,145 board_modifier.py:97]: Getting SW30 footprint position: (381000000, 57150000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D30 footprint position: (386080000, 61150000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW31 footprint position: (102393750, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D31 footprint position: (107473750, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW32 footprint position: (128587500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D32 footprint position: (133667500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW33 footprint position: (147637500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D33 footprint position: (152717500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW34 footprint position: (166687500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D34 footprint position: (171767500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW35 footprint position: (185737500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D35 footprint position: (190817500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW36 footprint position: (204787500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D36 footprint position: (209867500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW37 footprint position: (223837500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D37 footprint position: (228917500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW38 footprint position: (242887500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D38 footprint position: (247967500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW39 footprint position: (261937500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D39 footprint position: (267017500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW40 footprint position: (280987500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D40 footprint position: (286067500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW41 footprint position: (300037500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D41 footprint position: (305117500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW42 footprint position: (319087500, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D42 footprint position: (324167500, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW43 footprint position: (350043750, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D43 footprint position: (355123750, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW44 footprint position: (381000000, 76200000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D44 footprint position: (386080000, 80200000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW45 footprint position: (107156250, 95250000)
+[2024-09-07 09:29:17,146 board_modifier.py:84]: Setting D45 footprint position: (112236250, 99250000)
+[2024-09-07 09:29:17,146 board_modifier.py:97]: Getting SW46 footprint position: (138112500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D46 footprint position: (143192500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW47 footprint position: (157162500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D47 footprint position: (162242500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW48 footprint position: (176212500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D48 footprint position: (181292500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW49 footprint position: (195262500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D49 footprint position: (200342500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW50 footprint position: (214312500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D50 footprint position: (219392500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW51 footprint position: (233362500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D51 footprint position: (238442500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW52 footprint position: (252412500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D52 footprint position: (257492500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW53 footprint position: (271462500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D53 footprint position: (276542500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW54 footprint position: (290512500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D54 footprint position: (295592500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW55 footprint position: (309562500, 95250000)
+[2024-09-07 09:29:17,147 board_modifier.py:84]: Setting D55 footprint position: (314642500, 99250000)
+[2024-09-07 09:29:17,147 board_modifier.py:97]: Getting SW56 footprint position: (335756250, 95250000)
+[2024-09-07 09:29:17,148 board_modifier.py:84]: Setting D56 footprint position: (340836250, 99250000)
+[2024-09-07 09:29:17,148 board_modifier.py:97]: Getting SW57 footprint position: (361950000, 95250000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D57 footprint position: (367030000, 99250000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW58 footprint position: (381000000, 95250000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D58 footprint position: (386080000, 99250000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW59 footprint position: (97631250, 114300000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D59 footprint position: (102711250, 118300000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW60 footprint position: (121443750, 114300000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D60 footprint position: (126523750, 118300000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW61 footprint position: (145256250, 114300000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D61 footprint position: (150336250, 118300000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW62 footprint position: (216693750, 114300000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D62 footprint position: (221773750, 118300000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW63 footprint position: (285750000, 114300000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D63 footprint position: (290830000, 118300000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW64 footprint position: (304800000, 114300000)
+[2024-09-07 09:29:17,149 board_modifier.py:84]: Setting D64 footprint position: (309880000, 118300000)
+[2024-09-07 09:29:17,149 board_modifier.py:97]: Getting SW65 footprint position: (323850000, 114300000)
+[2024-09-07 09:29:17,150 board_modifier.py:84]: Setting D65 footprint position: (328930000, 118300000)
+[2024-09-07 09:29:17,150 board_modifier.py:97]: Getting SW66 footprint position: (342900000, 114300000)
+[2024-09-07 09:29:17,150 board_modifier.py:84]: Setting D66 footprint position: (347980000, 118300000)
+[2024-09-07 09:29:17,150 board_modifier.py:97]: Getting SW67 footprint position: (361950000, 114300000)
+[2024-09-07 09:29:17,150 board_modifier.py:84]: Setting D67 footprint position: (367030000, 118300000)
+[2024-09-07 09:29:17,150 board_modifier.py:97]: Getting SW68 footprint position: (381000000, 114300000)
+[2024-09-07 09:29:17,150 board_modifier.py:84]: Setting D68 footprint position: (386080000, 118300000)
+[2024-09-07 09:29:17,150 key_placer.py:723]: Placing additional elements for SW33
+[2024-09-07 09:29:17,150 board_modifier.py:97]: Getting SW33 footprint position: (147637500, 76200000)
+[2024-09-07 09:29:17,150 board_modifier.py:74]: Searching for optional ST33 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW68
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW68 footprint position: (381000000, 114300000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST68 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW39
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW39 footprint position: (261937500, 76200000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST39 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW59
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW59 footprint position: (97631250, 114300000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST59 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW66
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW66 footprint position: (342900000, 114300000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST66 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW42
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW42 footprint position: (319087500, 76200000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST42 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW36
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW36 footprint position: (204787500, 76200000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST36 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW31
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW31 footprint position: (102393750, 76200000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST31 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW19
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW19 footprint position: (161925000, 57150000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST19 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW40
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW40 footprint position: (280987500, 76200000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST40 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW52
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW52 footprint position: (252412500, 95250000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST52 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW62
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW62 footprint position: (216693750, 114300000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST62 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:84]: Setting ST62 footprint position: (216693750, 114300000)
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW9
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW9 footprint position: (247650000, 38100000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST9 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,151 key_placer.py:723]: Placing additional elements for SW37
+[2024-09-07 09:29:17,151 board_modifier.py:97]: Getting SW37 footprint position: (223837500, 76200000)
+[2024-09-07 09:29:17,151 board_modifier.py:74]: Searching for optional ST37 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,151 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW30
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW30 footprint position: (381000000, 57150000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST30 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW67
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW67 footprint position: (361950000, 114300000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST67 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW60
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW60 footprint position: (121443750, 114300000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST60 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW21
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW21 footprint position: (200025000, 57150000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST21 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW50
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW50 footprint position: (214312500, 95250000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST50 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW25
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW25 footprint position: (276225000, 57150000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST25 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW58
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW58 footprint position: (381000000, 95250000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST58 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW3
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW3 footprint position: (133350000, 38100000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST3 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW41
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW41 footprint position: (300037500, 76200000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST41 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW57
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW57 footprint position: (361950000, 95250000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST57 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW45
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW45 footprint position: (107156250, 95250000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST45 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:84]: Setting ST45 footprint position: (107156250, 95250000)
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW46
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW46 footprint position: (138112500, 95250000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST46 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW20
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW20 footprint position: (180975000, 57150000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST20 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW54
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW54 footprint position: (290512500, 95250000)
+[2024-09-07 09:29:17,152 board_modifier.py:74]: Searching for optional ST54 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,152 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,152 key_placer.py:723]: Placing additional elements for SW2
+[2024-09-07 09:29:17,152 board_modifier.py:97]: Getting SW2 footprint position: (114300000, 38100000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST2 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW35
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW35 footprint position: (185737500, 76200000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST35 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW23
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW23 footprint position: (238125000, 57150000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST23 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW64
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW64 footprint position: (304800000, 114300000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST64 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW56
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW56 footprint position: (335756250, 95250000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST56 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW22
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW22 footprint position: (219075000, 57150000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST22 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW5
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW5 footprint position: (171450000, 38100000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST5 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW49
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW49 footprint position: (195262500, 95250000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST49 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW61
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW61 footprint position: (145256250, 114300000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST61 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW63
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW63 footprint position: (285750000, 114300000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST63 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW7
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW7 footprint position: (209550000, 38100000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST7 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW28
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW28 footprint position: (333375000, 57150000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST28 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW53
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW53 footprint position: (271462500, 95250000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST53 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW4
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW4 footprint position: (152400000, 38100000)
+[2024-09-07 09:29:17,153 board_modifier.py:74]: Searching for optional ST4 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,153 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,153 key_placer.py:723]: Placing additional elements for SW10
+[2024-09-07 09:29:17,153 board_modifier.py:97]: Getting SW10 footprint position: (266700000, 38100000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST10 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW14
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW14 footprint position: (352425000, 38100000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST14 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:84]: Setting ST14 footprint position: (352425000, 38100000)
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW27
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW27 footprint position: (314325000, 57150000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST27 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW65
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW65 footprint position: (323850000, 114300000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST65 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW11
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW11 footprint position: (285750000, 38100000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST11 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW47
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW47 footprint position: (157162500, 95250000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST47 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW32
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW32 footprint position: (128587500, 76200000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST32 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW15
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW15 footprint position: (381000000, 38100000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST15 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW48
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW48 footprint position: (176212500, 95250000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST48 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW51
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW51 footprint position: (233362500, 95250000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST51 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW13
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW13 footprint position: (323850000, 38100000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST13 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW44
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW44 footprint position: (381000000, 76200000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST44 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW43
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW43 footprint position: (350043750, 76200000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST43 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,154 board_modifier.py:84]: Setting ST43 footprint position: (350043750, 76200000)
+[2024-09-07 09:29:17,154 key_placer.py:723]: Placing additional elements for SW16
+[2024-09-07 09:29:17,154 board_modifier.py:97]: Getting SW16 footprint position: (100012500, 57150000)
+[2024-09-07 09:29:17,154 board_modifier.py:74]: Searching for optional ST16 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW38
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW38 footprint position: (242887500, 76200000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST38 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW6
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW6 footprint position: (190500000, 38100000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST6 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW29
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW29 footprint position: (357187500, 57150000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST29 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW18
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW18 footprint position: (142875000, 57150000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST18 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW12
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW12 footprint position: (304800000, 38100000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST12 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW8
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW8 footprint position: (228600000, 38100000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST8 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW34
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW34 footprint position: (166687500, 76200000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST34 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW17
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW17 footprint position: (123825000, 57150000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST17 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW26
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW26 footprint position: (295275000, 57150000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST26 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW1
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW1 footprint position: (95250000, 38100000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST1 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW55
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW55 footprint position: (309562500, 95250000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST55 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,155 key_placer.py:723]: Placing additional elements for SW24
+[2024-09-07 09:29:17,155 board_modifier.py:97]: Getting SW24 footprint position: (257175000, 57150000)
+[2024-09-07 09:29:17,155 board_modifier.py:74]: Searching for optional ST24 footprint in /kicad/0ec3380d-1804-4fc7-8824-569d9b5493b6/Anticheww/Anticheww.kicad_pcb
+[2024-09-07 09:29:17,155 board_modifier.py:79]: Footprint not found
+[2024-09-07 09:29:17,156 edge_generator.py:135]: Running board edge generation around footprints with annotation matching 'SW{}' format
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :Stabilizer_Cherry_MX_2.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.75u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_6.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :Stabilizer_Cherry_MX_6.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_2.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.75u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_2.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :Stabilizer_Cherry_MX_2.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_2.25u has no footprint.
+Component :SW_Cherry_MX_PCB_1.50u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :Stabilizer_Cherry_MX_2.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.50u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123.back has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :D_SOD-123 has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :Stabilizer_Cherry_MX_2.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.75u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_6.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :Stabilizer_Cherry_MX_6.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_2.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.75u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_2.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :Stabilizer_Cherry_MX_2.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_2.25u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.50u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :Stabilizer_Cherry_MX_2.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.50u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.
+Component :SW_Cherry_MX_PCB_1.00u.back has no footprint.

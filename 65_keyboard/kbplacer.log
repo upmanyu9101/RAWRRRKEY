@@ -1,0 +1,359 @@
+[kbplacer_plugin_action.py:63]: Plugin version: 0.11
+[kbplacer_plugin_action.py:64]: Python version: '3.11.5 (main, May 10 2024, 05:24:12) [MSC v.1939 64 bit (AMD64)]'
+[kbplacer_plugin_action.py:65]: KiCad version: 8.0.3 with 4.2.0 msw (phoenix) wxWidgets 3.2.4
+[kbplacer_dialog.py:585]: Language: en
+[kbplacer_plugin_action.py:76]: GUI state: {"layout_path": "C:\\Projects\\Keyboard\\Keyboard\\Layout\\Final_Layout_65.json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "SW{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}, "enable_diode_placement": false, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}, "additional_elements": [{"annotation_format": "ST{}", "position_option": "Custom", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Front"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+[key_placer.py:310]: Set key 1U distance: 19050000/19050000
+[key_placer.py:117]: Switches by nets: defaultdict(<class 'list'>, {frozenset({'unconnected-(SW69-Pad1)', 'unconnected-(D69-K-Pad1)'}): ['SW69'], frozenset({'unconnected-(SW68-Pad1)', 'unconnected-(D68-K-Pad1)'}): ['SW68'], frozenset({'unconnected-(SW67-Pad1)', 'unconnected-(D67-K-Pad1)'}): ['SW67'], frozenset({'unconnected-(D66-K-Pad1)', 'unconnected-(SW66-Pad1)'}): ['SW66'], frozenset({'unconnected-(D65-K-Pad1)', 'unconnected-(SW65-Pad1)'}): ['SW65'], frozenset({'unconnected-(D64-K-Pad1)', 'unconnected-(SW64-Pad1)'}): ['SW64'], frozenset({'unconnected-(D63-K-Pad1)', 'unconnected-(SW63-Pad1)'}): ['SW63'], frozenset({'unconnected-(D62-K-Pad1)', 'unconnected-(SW62-Pad1)'}): ['SW62'], frozenset({'unconnected-(D61-K-Pad1)', 'unconnected-(SW61-Pad1)'}): ['SW61'], frozenset({'unconnected-(SW60-Pad1)', 'unconnected-(D60-K-Pad1)'}): ['SW60'], frozenset({'unconnected-(D59-K-Pad1)', 'unconnected-(SW59-Pad1)'}): ['SW59'], frozenset({'unconnected-(D58-K-Pad1)', 'unconnected-(SW58-Pad1)'}): ['SW58'], frozenset({'unconnected-(D57-K-Pad1)', 'unconnected-(SW57-Pad1)'}): ['SW57'], frozenset({'unconnected-(D56-K-Pad1)', 'unconnected-(SW56-Pad1)'}): ['SW56'], frozenset({'unconnected-(SW55-Pad1)', 'unconnected-(D55-K-Pad1)'}): ['SW55'], frozenset({'unconnected-(SW54-Pad1)', 'unconnected-(D54-K-Pad1)'}): ['SW54'], frozenset({'unconnected-(SW53-Pad1)', 'unconnected-(D53-K-Pad1)'}): ['SW53'], frozenset({'unconnected-(SW52-Pad1)', 'unconnected-(D52-K-Pad1)'}): ['SW52'], frozenset({'unconnected-(D51-K-Pad1)', 'unconnected-(SW51-Pad1)'}): ['SW51'], frozenset({'unconnected-(SW50-Pad1)', 'unconnected-(D50-K-Pad1)'}): ['SW50'], frozenset({'unconnected-(SW49-Pad1)', 'unconnected-(D49-K-Pad1)'}): ['SW49'], frozenset({'unconnected-(SW48-Pad1)', 'unconnected-(D48-K-Pad1)'}): ['SW48'], frozenset({'unconnected-(D47-K-Pad1)', 'unconnected-(SW47-Pad1)'}): ['SW47'], frozenset({'unconnected-(D46-K-Pad1)', 'unconnected-(SW46-Pad1)'}): ['SW46'], frozenset({'unconnected-(SW45-Pad1)', 'unconnected-(D45-K-Pad1)'}): ['SW45'], frozenset({'unconnected-(SW44-Pad1)', 'unconnected-(D44-K-Pad1)'}): ['SW44'], frozenset({'unconnected-(SW43-Pad1)', 'unconnected-(D43-K-Pad1)'}): ['SW43'], frozenset({'unconnected-(D42-K-Pad1)', 'unconnected-(SW42-Pad1)'}): ['SW42'], frozenset({'unconnected-(SW41-Pad1)', 'unconnected-(D41-K-Pad1)'}): ['SW41'], frozenset({'unconnected-(SW40-Pad1)', 'unconnected-(D40-K-Pad1)'}): ['SW40'], frozenset({'unconnected-(SW39-Pad1)', 'unconnected-(D39-K-Pad1)'}): ['SW39'], frozenset({'unconnected-(D38-K-Pad1)', 'unconnected-(SW38-Pad1)'}): ['SW38'], frozenset({'unconnected-(SW37-Pad1)', 'unconnected-(D37-K-Pad1)'}): ['SW37'], frozenset({'unconnected-(SW36-Pad1)', 'unconnected-(D36-K-Pad1)'}): ['SW36'], frozenset({'unconnected-(SW35-Pad1)', 'unconnected-(D35-K-Pad1)'}): ['SW35'], frozenset({'unconnected-(SW34-Pad1)', 'unconnected-(D34-K-Pad1)'}): ['SW34'], frozenset({'unconnected-(SW33-Pad1)', 'unconnected-(D33-K-Pad1)'}): ['SW33'], frozenset({'unconnected-(SW32-Pad1)', 'unconnected-(D32-K-Pad1)'}): ['SW32'], frozenset({'unconnected-(SW31-Pad1)', 'unconnected-(D31-K-Pad1)'}): ['SW31'], frozenset({'unconnected-(SW30-Pad1)', 'unconnected-(D30-K-Pad1)'}): ['SW30'], frozenset({'unconnected-(D29-K-Pad1)', 'unconnected-(SW29-Pad1)'}): ['SW29'], frozenset({'unconnected-(D28-K-Pad1)', 'unconnected-(SW28-Pad1)'}): ['SW28'], frozenset({'unconnected-(D27-K-Pad1)', 'unconnected-(SW27-Pad1)'}): ['SW27'], frozenset({'unconnected-(D26-K-Pad1)', 'unconnected-(SW26-Pad1)'}): ['SW26'], frozenset({'unconnected-(SW25-Pad1)', 'unconnected-(D25-K-Pad1)'}): ['SW25'], frozenset({'unconnected-(SW24-Pad1)', 'unconnected-(D24-K-Pad1)'}): ['SW24'], frozenset({'unconnected-(SW23-Pad1)', 'unconnected-(D23-K-Pad1)'}): ['SW23'], frozenset({'unconnected-(D22-K-Pad1)', 'unconnected-(SW22-Pad1)'}): ['SW22'], frozenset({'unconnected-(SW21-Pad1)', 'unconnected-(D21-K-Pad1)'}): ['SW21'], frozenset({'unconnected-(D20-K-Pad1)', 'unconnected-(SW20-Pad1)'}): ['SW20'], frozenset({'unconnected-(SW19-Pad1)', 'unconnected-(D19-K-Pad1)'}): ['SW19'], frozenset({'unconnected-(D18-K-Pad1)', 'unconnected-(SW18-Pad1)'}): ['SW18'], frozenset({'unconnected-(D17-K-Pad1)', 'unconnected-(SW17-Pad1)'}): ['SW17'], frozenset({'unconnected-(SW16-Pad1)', 'unconnected-(D16-K-Pad1)'}): ['SW16'], frozenset({'unconnected-(SW15-Pad1)', 'unconnected-(D15-K-Pad1)'}): ['SW15'], frozenset({'unconnected-(D14-K-Pad1)', 'unconnected-(SW14-Pad1)'}): ['SW14'], frozenset({'unconnected-(D13-K-Pad1)', 'unconnected-(SW13-Pad1)'}): ['SW13'], frozenset({'unconnected-(SW12-Pad1)', 'unconnected-(D12-K-Pad1)'}): ['SW12'], frozenset({'unconnected-(SW11-Pad1)', 'unconnected-(D11-K-Pad1)'}): ['SW11'], frozenset({'unconnected-(D10-K-Pad1)', 'unconnected-(SW10-Pad1)'}): ['SW10'], frozenset({'unconnected-(SW9-Pad1)', 'unconnected-(D9-K-Pad1)'}): ['SW9'], frozenset({'unconnected-(SW8-Pad1)', 'unconnected-(D8-K-Pad1)'}): ['SW8'], frozenset({'unconnected-(D7-K-Pad1)', 'unconnected-(SW7-Pad1)'}): ['SW7'], frozenset({'unconnected-(SW6-Pad1)', 'unconnected-(D6-K-Pad1)'}): ['SW6'], frozenset({'unconnected-(SW5-Pad1)', 'unconnected-(D5-K-Pad1)'}): ['SW5'], frozenset({'unconnected-(SW4-Pad1)', 'unconnected-(D4-K-Pad1)'}): ['SW4'], frozenset({'unconnected-(SW3-Pad1)', 'unconnected-(D3-K-Pad1)'}): ['SW3'], frozenset({'unconnected-(D2-K-Pad1)', 'unconnected-(SW2-Pad1)'}): ['SW2'], frozenset({'unconnected-(SW1-Pad1)', 'unconnected-(D1-K-Pad1)'}): ['SW1']})
+[key_placer.py:121]: Diodes by switch: {'SW69': ['D69'], 'SW68': ['D68'], 'SW67': ['D67'], 'SW66': ['D66'], 'SW65': ['D65'], 'SW64': ['D64'], 'SW63': ['D63'], 'SW62': ['D62'], 'SW61': ['D61'], 'SW60': ['D60'], 'SW59': ['D59'], 'SW58': ['D58'], 'SW57': ['D57'], 'SW56': ['D56'], 'SW55': ['D55'], 'SW54': ['D54'], 'SW53': ['D53'], 'SW52': ['D52'], 'SW51': ['D51'], 'SW50': ['D50'], 'SW49': ['D49'], 'SW48': ['D48'], 'SW47': ['D47'], 'SW46': ['D46'], 'SW45': ['D45'], 'SW44': ['D44'], 'SW43': ['D43'], 'SW42': ['D42'], 'SW41': ['D41'], 'SW40': ['D40'], 'SW39': ['D39'], 'SW38': ['D38'], 'SW37': ['D37'], 'SW36': ['D36'], 'SW35': ['D35'], 'SW34': ['D34'], 'SW33': ['D33'], 'SW32': ['D32'], 'SW31': ['D31'], 'SW30': ['D30'], 'SW29': ['D29'], 'SW28': ['D28'], 'SW27': ['D27'], 'SW26': ['D26'], 'SW25': ['D25'], 'SW24': ['D24'], 'SW23': ['D23'], 'SW22': ['D22'], 'SW21': ['D21'], 'SW20': ['D20'], 'SW19': ['D19'], 'SW18': ['D18'], 'SW17': ['D17'], 'SW16': ['D16'], 'SW15': ['D15'], 'SW14': ['D14'], 'SW13': ['D13'], 'SW12': ['D12'], 'SW11': ['D11'], 'SW10': ['D10'], 'SW9': ['D9'], 'SW8': ['D8'], 'SW7': ['D7'], 'SW6': ['D6'], 'SW5': ['D5'], 'SW4': ['D4'], 'SW3': ['D3'], 'SW2': ['D2'], 'SW1': ['D1']}
+[board_modifier.py:63]: Searching for SW1 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[key_placer.py:506]: Looking for connection template between SW1 and other elements
+[board_modifier.py:97]: Getting SW1 footprint position: (79810000, 111540000)
+[key_placer.py:550]: Got connection template: 
+[kle_serial.py:885]: User layout: [{'name': 'Anticheww', 'author': 'Gondolindrim and Chewwy', 'switchMount': 'cherry', 'pcb': True}, [{'x': 2.5}, '~\n`', '!\n1', '@\n2', '#\n3', '$\n4', '%\n5', '^\n6', '&\n7', '*\n8', '(\n9', ')\n0', '-\n_', '+\n=', {'c': '#92de8a', 'w': 2}, 'Backspace\n\n\n2u', {'c': '#cccccc'}, "Del\n\n\n<i class='fa fa-refresh'></i>"], [{'x': 2.5, 'w': 1.5}, 'Tab\n\n\n1.5', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{\n[', '}\n]', {'c': '#f27e7e', 'w': 1.5}, '|\n\\\n\n1.5', {'c': '#cccccc'}, "Home\n\n\n<i class='fa fa-refresh'></i>"], [{'x': 2.5, 'c': '#99dee0', 'w': 1.75}, 'Caps Lock\n\n\n1.75', {'c': '#cccccc'}, 'A', 'S', 'D', {'n': True}, 'F', 'G', 'H', {'n': True}, 'J', 'K', 'L', ':\n;', '"\n\'', {'c': '#f27e7e', 'w': 2.25}, 'Enter\n\n\n2.25', {'c': '#cccccc'}, "PgUp\n\n\n<i class='fa fa-refresh'></i>"], [{'x': 2.5, 'c': '#f2b67e', 'w': 2.25}, 'Shift\n\n\n2.25', {'c': '#cccccc'}, 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<\n,', '>\n.', '?\n/', {'c': '#8486c2', 'w': 1.75}, 'Shift\n\n\n1.75', '↑', {'c': '#cccccc'}, "PgDn\n\n\n<i class='fa fa-refresh'></i>"], [{'x': 2.5, 'w': 1.25}, 'Ctrl\n\n\n1.25', {'w': 1.25}, 'Win\n\n\n1.25', {'w': 1.25}, 'Alt\n\n\n1.25', {'c': '#d5db70', 'w': 6.25}, '\n\n\n6.25', {'c': '#cccccc'}, 'Alt\n\n\n1.0', 'Ctrl\n\n\n1.0', 'Ctrl\n\n\n1.0', '←', '↓', '→']]
+[key_placer.py:610]: Layout offset: (38100000, 28575000)
+[board_modifier.py:84]: Setting SW1 footprint position: (95250000, 38100000)
+[board_modifier.py:84]: Setting SW2 footprint position: (114300000, 38100000)
+[board_modifier.py:84]: Setting SW3 footprint position: (133350000, 38100000)
+[board_modifier.py:84]: Setting SW4 footprint position: (152400000, 38100000)
+[board_modifier.py:84]: Setting SW5 footprint position: (171450000, 38100000)
+[board_modifier.py:84]: Setting SW6 footprint position: (190500000, 38100000)
+[board_modifier.py:84]: Setting SW7 footprint position: (209550000, 38100000)
+[board_modifier.py:84]: Setting SW8 footprint position: (228600000, 38100000)
+[board_modifier.py:84]: Setting SW9 footprint position: (247650000, 38100000)
+[board_modifier.py:84]: Setting SW10 footprint position: (266700000, 38100000)
+[board_modifier.py:84]: Setting SW11 footprint position: (285750000, 38100000)
+[board_modifier.py:84]: Setting SW12 footprint position: (304800000, 38100000)
+[board_modifier.py:84]: Setting SW13 footprint position: (323850000, 38100000)
+[board_modifier.py:84]: Setting SW14 footprint position: (352425000, 38100000)
+[board_modifier.py:84]: Setting SW15 footprint position: (381000000, 38100000)
+[board_modifier.py:84]: Setting SW16 footprint position: (100012500, 57150000)
+[board_modifier.py:84]: Setting SW17 footprint position: (123825000, 57150000)
+[board_modifier.py:84]: Setting SW18 footprint position: (142875000, 57150000)
+[board_modifier.py:84]: Setting SW19 footprint position: (161925000, 57150000)
+[board_modifier.py:84]: Setting SW20 footprint position: (180975000, 57150000)
+[board_modifier.py:84]: Setting SW21 footprint position: (200025000, 57150000)
+[board_modifier.py:84]: Setting SW22 footprint position: (219075000, 57150000)
+[board_modifier.py:84]: Setting SW23 footprint position: (238125000, 57150000)
+[board_modifier.py:84]: Setting SW24 footprint position: (257175000, 57150000)
+[board_modifier.py:84]: Setting SW25 footprint position: (276225000, 57150000)
+[board_modifier.py:84]: Setting SW26 footprint position: (295275000, 57150000)
+[board_modifier.py:84]: Setting SW27 footprint position: (314325000, 57150000)
+[board_modifier.py:84]: Setting SW28 footprint position: (333375000, 57150000)
+[board_modifier.py:84]: Setting SW29 footprint position: (357187500, 57150000)
+[board_modifier.py:84]: Setting SW30 footprint position: (381000000, 57150000)
+[board_modifier.py:84]: Setting SW31 footprint position: (102393750, 76200000)
+[board_modifier.py:84]: Setting SW32 footprint position: (128587500, 76200000)
+[board_modifier.py:84]: Setting SW33 footprint position: (147637500, 76200000)
+[board_modifier.py:84]: Setting SW34 footprint position: (166687500, 76200000)
+[board_modifier.py:84]: Setting SW35 footprint position: (185737500, 76200000)
+[board_modifier.py:84]: Setting SW36 footprint position: (204787500, 76200000)
+[board_modifier.py:84]: Setting SW37 footprint position: (223837500, 76200000)
+[board_modifier.py:84]: Setting SW38 footprint position: (242887500, 76200000)
+[board_modifier.py:84]: Setting SW39 footprint position: (261937500, 76200000)
+[board_modifier.py:84]: Setting SW40 footprint position: (280987500, 76200000)
+[board_modifier.py:84]: Setting SW41 footprint position: (300037500, 76200000)
+[board_modifier.py:84]: Setting SW42 footprint position: (319087500, 76200000)
+[board_modifier.py:84]: Setting SW43 footprint position: (350043750, 76200000)
+[board_modifier.py:84]: Setting SW44 footprint position: (381000000, 76200000)
+[board_modifier.py:84]: Setting SW45 footprint position: (107156250, 95250000)
+[board_modifier.py:84]: Setting SW46 footprint position: (138112500, 95250000)
+[board_modifier.py:84]: Setting SW47 footprint position: (157162500, 95250000)
+[board_modifier.py:84]: Setting SW48 footprint position: (176212500, 95250000)
+[board_modifier.py:84]: Setting SW49 footprint position: (195262500, 95250000)
+[board_modifier.py:84]: Setting SW50 footprint position: (214312500, 95250000)
+[board_modifier.py:84]: Setting SW51 footprint position: (233362500, 95250000)
+[board_modifier.py:84]: Setting SW52 footprint position: (252412500, 95250000)
+[board_modifier.py:84]: Setting SW53 footprint position: (271462500, 95250000)
+[board_modifier.py:84]: Setting SW54 footprint position: (290512500, 95250000)
+[board_modifier.py:84]: Setting SW55 footprint position: (309562500, 95250000)
+[board_modifier.py:84]: Setting SW56 footprint position: (335756250, 95250000)
+[board_modifier.py:84]: Setting SW57 footprint position: (361950000, 95250000)
+[board_modifier.py:84]: Setting SW58 footprint position: (381000000, 95250000)
+[board_modifier.py:84]: Setting SW59 footprint position: (97631250, 114300000)
+[board_modifier.py:84]: Setting SW60 footprint position: (121443750, 114300000)
+[board_modifier.py:84]: Setting SW61 footprint position: (145256250, 114300000)
+[board_modifier.py:84]: Setting SW62 footprint position: (216693750, 114300000)
+[board_modifier.py:84]: Setting SW63 footprint position: (285750000, 114300000)
+[board_modifier.py:84]: Setting SW64 footprint position: (304800000, 114300000)
+[board_modifier.py:84]: Setting SW65 footprint position: (323850000, 114300000)
+[board_modifier.py:84]: Setting SW66 footprint position: (342900000, 114300000)
+[board_modifier.py:84]: Setting SW67 footprint position: (361950000, 114300000)
+[board_modifier.py:84]: Setting SW68 footprint position: (381000000, 114300000)
+[key_placer.py:955]: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.UNCHANGED: 'Unchanged'>, position=ElementPosition(x=0.0, y=0.0, orientation=0.0, side=<Side.FRONT: 'Front'>), template_path='')]
+[key_placer.py:723]: Placing additional elements for SW69
+[board_modifier.py:97]: Getting SW69 footprint position: (309700000, 157050000)
+[board_modifier.py:74]: Searching for optional ST69 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW68
+[board_modifier.py:97]: Getting SW68 footprint position: (381000000, 114300000)
+[board_modifier.py:74]: Searching for optional ST68 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW67
+[board_modifier.py:97]: Getting SW67 footprint position: (361950000, 114300000)
+[board_modifier.py:74]: Searching for optional ST67 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW66
+[board_modifier.py:97]: Getting SW66 footprint position: (342900000, 114300000)
+[board_modifier.py:74]: Searching for optional ST66 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW65
+[board_modifier.py:97]: Getting SW65 footprint position: (323850000, 114300000)
+[board_modifier.py:74]: Searching for optional ST65 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW64
+[board_modifier.py:97]: Getting SW64 footprint position: (304800000, 114300000)
+[board_modifier.py:74]: Searching for optional ST64 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW63
+[board_modifier.py:97]: Getting SW63 footprint position: (285750000, 114300000)
+[board_modifier.py:74]: Searching for optional ST63 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW62
+[board_modifier.py:97]: Getting SW62 footprint position: (216693750, 114300000)
+[board_modifier.py:74]: Searching for optional ST62 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW61
+[board_modifier.py:97]: Getting SW61 footprint position: (145256250, 114300000)
+[board_modifier.py:74]: Searching for optional ST61 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW60
+[board_modifier.py:97]: Getting SW60 footprint position: (121443750, 114300000)
+[board_modifier.py:74]: Searching for optional ST60 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW59
+[board_modifier.py:97]: Getting SW59 footprint position: (97631250, 114300000)
+[board_modifier.py:74]: Searching for optional ST59 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW58
+[board_modifier.py:97]: Getting SW58 footprint position: (381000000, 95250000)
+[board_modifier.py:74]: Searching for optional ST58 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW57
+[board_modifier.py:97]: Getting SW57 footprint position: (361950000, 95250000)
+[board_modifier.py:74]: Searching for optional ST57 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW56
+[board_modifier.py:97]: Getting SW56 footprint position: (335756250, 95250000)
+[board_modifier.py:74]: Searching for optional ST56 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW55
+[board_modifier.py:97]: Getting SW55 footprint position: (309562500, 95250000)
+[board_modifier.py:74]: Searching for optional ST55 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW54
+[board_modifier.py:97]: Getting SW54 footprint position: (290512500, 95250000)
+[board_modifier.py:74]: Searching for optional ST54 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW53
+[board_modifier.py:97]: Getting SW53 footprint position: (271462500, 95250000)
+[board_modifier.py:74]: Searching for optional ST53 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW52
+[board_modifier.py:97]: Getting SW52 footprint position: (252412500, 95250000)
+[board_modifier.py:74]: Searching for optional ST52 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW51
+[board_modifier.py:97]: Getting SW51 footprint position: (233362500, 95250000)
+[board_modifier.py:74]: Searching for optional ST51 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW50
+[board_modifier.py:97]: Getting SW50 footprint position: (214312500, 95250000)
+[board_modifier.py:74]: Searching for optional ST50 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW49
+[board_modifier.py:97]: Getting SW49 footprint position: (195262500, 95250000)
+[board_modifier.py:74]: Searching for optional ST49 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW48
+[board_modifier.py:97]: Getting SW48 footprint position: (176212500, 95250000)
+[board_modifier.py:74]: Searching for optional ST48 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW47
+[board_modifier.py:97]: Getting SW47 footprint position: (157162500, 95250000)
+[board_modifier.py:74]: Searching for optional ST47 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW46
+[board_modifier.py:97]: Getting SW46 footprint position: (138112500, 95250000)
+[board_modifier.py:74]: Searching for optional ST46 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW45
+[board_modifier.py:97]: Getting SW45 footprint position: (107156250, 95250000)
+[board_modifier.py:74]: Searching for optional ST45 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW44
+[board_modifier.py:97]: Getting SW44 footprint position: (381000000, 76200000)
+[board_modifier.py:74]: Searching for optional ST44 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW43
+[board_modifier.py:97]: Getting SW43 footprint position: (350043750, 76200000)
+[board_modifier.py:74]: Searching for optional ST43 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW42
+[board_modifier.py:97]: Getting SW42 footprint position: (319087500, 76200000)
+[board_modifier.py:74]: Searching for optional ST42 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW41
+[board_modifier.py:97]: Getting SW41 footprint position: (300037500, 76200000)
+[board_modifier.py:74]: Searching for optional ST41 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW40
+[board_modifier.py:97]: Getting SW40 footprint position: (280987500, 76200000)
+[board_modifier.py:74]: Searching for optional ST40 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW39
+[board_modifier.py:97]: Getting SW39 footprint position: (261937500, 76200000)
+[board_modifier.py:74]: Searching for optional ST39 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW38
+[board_modifier.py:97]: Getting SW38 footprint position: (242887500, 76200000)
+[board_modifier.py:74]: Searching for optional ST38 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW37
+[board_modifier.py:97]: Getting SW37 footprint position: (223837500, 76200000)
+[board_modifier.py:74]: Searching for optional ST37 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW36
+[board_modifier.py:97]: Getting SW36 footprint position: (204787500, 76200000)
+[board_modifier.py:74]: Searching for optional ST36 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW35
+[board_modifier.py:97]: Getting SW35 footprint position: (185737500, 76200000)
+[board_modifier.py:74]: Searching for optional ST35 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW34
+[board_modifier.py:97]: Getting SW34 footprint position: (166687500, 76200000)
+[board_modifier.py:74]: Searching for optional ST34 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW33
+[board_modifier.py:97]: Getting SW33 footprint position: (147637500, 76200000)
+[board_modifier.py:74]: Searching for optional ST33 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW32
+[board_modifier.py:97]: Getting SW32 footprint position: (128587500, 76200000)
+[board_modifier.py:74]: Searching for optional ST32 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW31
+[board_modifier.py:97]: Getting SW31 footprint position: (102393750, 76200000)
+[board_modifier.py:74]: Searching for optional ST31 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW30
+[board_modifier.py:97]: Getting SW30 footprint position: (381000000, 57150000)
+[board_modifier.py:74]: Searching for optional ST30 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW29
+[board_modifier.py:97]: Getting SW29 footprint position: (357187500, 57150000)
+[board_modifier.py:74]: Searching for optional ST29 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW28
+[board_modifier.py:97]: Getting SW28 footprint position: (333375000, 57150000)
+[board_modifier.py:74]: Searching for optional ST28 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW27
+[board_modifier.py:97]: Getting SW27 footprint position: (314325000, 57150000)
+[board_modifier.py:74]: Searching for optional ST27 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW26
+[board_modifier.py:97]: Getting SW26 footprint position: (295275000, 57150000)
+[board_modifier.py:74]: Searching for optional ST26 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW25
+[board_modifier.py:97]: Getting SW25 footprint position: (276225000, 57150000)
+[board_modifier.py:74]: Searching for optional ST25 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW24
+[board_modifier.py:97]: Getting SW24 footprint position: (257175000, 57150000)
+[board_modifier.py:74]: Searching for optional ST24 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW23
+[board_modifier.py:97]: Getting SW23 footprint position: (238125000, 57150000)
+[board_modifier.py:74]: Searching for optional ST23 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW22
+[board_modifier.py:97]: Getting SW22 footprint position: (219075000, 57150000)
+[board_modifier.py:74]: Searching for optional ST22 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW21
+[board_modifier.py:97]: Getting SW21 footprint position: (200025000, 57150000)
+[board_modifier.py:74]: Searching for optional ST21 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW20
+[board_modifier.py:97]: Getting SW20 footprint position: (180975000, 57150000)
+[board_modifier.py:74]: Searching for optional ST20 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW19
+[board_modifier.py:97]: Getting SW19 footprint position: (161925000, 57150000)
+[board_modifier.py:74]: Searching for optional ST19 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW18
+[board_modifier.py:97]: Getting SW18 footprint position: (142875000, 57150000)
+[board_modifier.py:74]: Searching for optional ST18 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW17
+[board_modifier.py:97]: Getting SW17 footprint position: (123825000, 57150000)
+[board_modifier.py:74]: Searching for optional ST17 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW16
+[board_modifier.py:97]: Getting SW16 footprint position: (100012500, 57150000)
+[board_modifier.py:74]: Searching for optional ST16 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW15
+[board_modifier.py:97]: Getting SW15 footprint position: (381000000, 38100000)
+[board_modifier.py:74]: Searching for optional ST15 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW14
+[board_modifier.py:97]: Getting SW14 footprint position: (352425000, 38100000)
+[board_modifier.py:74]: Searching for optional ST14 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW13
+[board_modifier.py:97]: Getting SW13 footprint position: (323850000, 38100000)
+[board_modifier.py:74]: Searching for optional ST13 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW12
+[board_modifier.py:97]: Getting SW12 footprint position: (304800000, 38100000)
+[board_modifier.py:74]: Searching for optional ST12 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW11
+[board_modifier.py:97]: Getting SW11 footprint position: (285750000, 38100000)
+[board_modifier.py:74]: Searching for optional ST11 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW10
+[board_modifier.py:97]: Getting SW10 footprint position: (266700000, 38100000)
+[board_modifier.py:74]: Searching for optional ST10 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW9
+[board_modifier.py:97]: Getting SW9 footprint position: (247650000, 38100000)
+[board_modifier.py:74]: Searching for optional ST9 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW8
+[board_modifier.py:97]: Getting SW8 footprint position: (228600000, 38100000)
+[board_modifier.py:74]: Searching for optional ST8 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW7
+[board_modifier.py:97]: Getting SW7 footprint position: (209550000, 38100000)
+[board_modifier.py:74]: Searching for optional ST7 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW6
+[board_modifier.py:97]: Getting SW6 footprint position: (190500000, 38100000)
+[board_modifier.py:74]: Searching for optional ST6 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW5
+[board_modifier.py:97]: Getting SW5 footprint position: (171450000, 38100000)
+[board_modifier.py:74]: Searching for optional ST5 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW4
+[board_modifier.py:97]: Getting SW4 footprint position: (152400000, 38100000)
+[board_modifier.py:74]: Searching for optional ST4 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW3
+[board_modifier.py:97]: Getting SW3 footprint position: (133350000, 38100000)
+[board_modifier.py:74]: Searching for optional ST3 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW2
+[board_modifier.py:97]: Getting SW2 footprint position: (114300000, 38100000)
+[board_modifier.py:74]: Searching for optional ST2 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found
+[key_placer.py:723]: Placing additional elements for SW1
+[board_modifier.py:97]: Getting SW1 footprint position: (95250000, 38100000)
+[board_modifier.py:74]: Searching for optional ST1 footprint in C:\Projects\Keyboard\Keyboard\65_keyboard\65_keyboard.kicad_pcb
+[board_modifier.py:79]: Footprint not found

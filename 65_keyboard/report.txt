@@ -1,0 +1,1 @@
+Changed footprint D8 from 'Diode_THT:D_DO-35_NEWrawr' to 'Diode_THT:D_DO-35_NEWrawr': : OK
